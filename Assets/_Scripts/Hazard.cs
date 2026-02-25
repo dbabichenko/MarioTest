@@ -7,6 +7,7 @@ public class Hazard : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             GameManager.Instance.LoseLife(1);
+            Destroy(gameObject);
         }
     }
 }
